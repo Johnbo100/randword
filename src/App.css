@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.meanings{
+  background-color: rgb(221, 179, 96);
+}
+/*
+
+rgb(225, 21, 21);
+gold
+dodgerblue;
+*/
+
+.definition{
+  margin: 20px;
+}
+.header{
+  background-color: gold;
+}
+
+#numletbtn{
+  background-color: dodgerblue;
+  color: white;
+}
+#poscombtn{
+  background-color: rgb(225, 21, 21);
+  color: white;
+  padding:15px;
+  border-radius: 10px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#Letters {
+  display: flex;
+  width: 50%;
+  font-size: 3em;
+  border-radius: 3px;
+  color: gold;
+  letter-spacing: 3px;
+  text-transform:uppercase;
+}
+
+#LettersWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+.letterButton {
+  display: flex;
+  background-color: dodgerblue;
+  color: aliceblue;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  justify-content: center;
+  border: 1px solid rgb(234, 255, 0);
+}
+.letterButton:hover {
+  border: 1px solid red;
+}
+#letterInput {
+  display: flex;
+  justify-content: center;
+}
+#controlsWrapper {
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.loader{
+  background-color: #2057c6b1;
+  position: fixed;
+  height:100vh;
+  width:100vw;
+  z-index: 10;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#numLetters {
+  width: 20%;
+  font-size: 3em;
+  border-radius: 3px;
+  color: white;
+  background: dodgerblue;
+}
+.words{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.words>li{
+  color: rgb(225, 21, 21);
+  font-size: 20px;
+  border:5px;
+  list-style-type: none;
+  padding: 5px;
+}
+#popAnim {
+  display: block;
+  position: fixed;
+  font-size: 30vw;
+  font-weight: bolder;
+  top: -400px;
+  animation: drop 2s ease-out;
+}
+@keyframes drop {
+  0% {
+    color: chartreuse;
+  }
+  50% {
+    color: fuchsia;
+  }
+  75% {
+    transform: translateY(700px);
+  }
+  100% {
+    transform: translateY(650px);
+    color: orange;
+  }
+}
